@@ -5,6 +5,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 import io
+import os
 
 def generate_invoice(data):
     buffer = io.BytesIO()
@@ -103,4 +104,5 @@ def generate_pdf():
 #     app.run(debug=True) # Descomentar para probar en local
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000, debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
