@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Cuenta de Cobro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Generador de Cuenta de Cobro</h1>
+    <form id="invoiceForm">
+        <input type="text" id="cliente" placeholder="Nombre del Cliente" required>
+        <input type="text" id="cliente_nit" placeholder="NIT del Cliente" required>
+        <textarea id="descripcion" placeholder="Descripción del cobro" required></textarea>
+        <input type="number" id="valor_total" placeholder="Valor Total" required>
+        <input type="number" id="abono" placeholder="Abono Recibido" required>
+        <input type="text" id="condiciones" placeholder="Condiciones de pago" required>
+        <button type="submit">Generar PDF</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
