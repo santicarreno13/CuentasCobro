@@ -16,7 +16,7 @@ document.getElementById("invoiceForm").addEventListener("submit", function(event
         celular_remitente: "3125915013"
     };
     
-    fetch("http://localhost:5000/generate_pdf", {
+    fetch("https://cuentascobro.onrender.com/generate_pdf", { //http://127.0.0.1:5000/generate_pdf" Para servidor local
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
