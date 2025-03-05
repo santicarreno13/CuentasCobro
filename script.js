@@ -9,7 +9,7 @@ document.getElementById("invoiceForm").addEventListener("submit", function(event
         valor_total: document.getElementById("valor_total").value,
         abono: document.getElementById("abono").value,
         saldo: document.getElementById("valor_total").value - document.getElementById("abono").value,
-        condiciones: document.getElementById("condiciones").value,
+        material: document.getElementById("material").value,
         empresa_nit: "79864703-4",
         remitente: "Luis Antonio Carreño Gonzales",
         cedula_remitente: "79864703",
